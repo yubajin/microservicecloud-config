@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active:
+      - dev
+
+---
+server:
+  port: 8281
+spring:
+  profiles: dev
+  application:
+    name: microservicecloud-config-client1
+
+
+---
+server:
+  port: 8282
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-client2
